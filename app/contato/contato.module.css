@@ -1,0 +1,113 @@
+/* ================= Container ================= */
+.contatoSection {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Verdana, sans-serif;
+  color: whitesmoke;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.contatoSection h1 {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.contatoSection p {
+  margin-bottom: 2rem;
+  color: whitesmoke;
+}
+
+/* ================= Links de contato ================= */
+.contatoLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contatoLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+.contatoLink:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* ================= Cores específicas ================= */
+.linkedin {
+  background: linear-gradient(135deg, #0077B5, #005983);
+}
+
+.whatsapp {
+  background: linear-gradient(135deg, #25D366, #1DA851);
+}
+
+.email {
+  background: linear-gradient(135deg, #6B7280, #4B5563);
+}
+
+.github {
+  background: linear-gradient(135deg, #181717, #333333);
+}
+
+/* ================= Ícone flutuante do WhatsApp ================= */
+.whatsappFlutuante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: #fff;
+  padding: 14px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+}
+
+.whatsappFlutuante:hover {
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* ================= Responsividade ================= */
+@media (max-width: 768px) {
+  .contatoLinks {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .contatoLink {
+    justify-content: center;
+    font-size: 0.95rem;
+    padding: 0.6rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contatoSection {
+    padding: 1rem;
+  }
+
+  .whatsappFlutuante {
+    bottom: 15px;
+    right: 15px;
+    padding: 12px;
+  }
+}
