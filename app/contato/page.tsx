@@ -10,7 +10,7 @@ export default function Contato() {
       <section className={styles.contatoSection}>
         <h1>Entre em Contato</h1>
         <p>
-          Fique à vontade para me enviar uma mensagem através de qualquer um dos canais de comunicação abaixo:
+          Fique à vontade para me enviar uma mensagem através de qualquer um dos canais de comunicação:
         </p>
 
         <div className={styles.contatoLinks}>
