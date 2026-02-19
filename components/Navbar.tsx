@@ -7,25 +7,25 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white dark:bg-zinc-900 shadow-md fixed w-full z-50">
+    <nav className="bg-blue-600 shadow-md fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link
           href="/"
           className="text-xl font-bold text-black dark:text-white"
         >
-          IBM SkillsMatch
+          IBM SkillsBuild Match!
         </Link>
 
         {/* Menu Desktop */}
         <div className="hidden md:flex space-x-6">
           <Link href="/">Home</Link>
-          <Link href="/conceito-atendimento">Conceito</Link>
-          <Link href="/canais-atendimento">Canais</Link>
-          <Link href="/estrategias-praticas">Estratégias</Link>
-          <Link href="/pos-venda">Pós-venda</Link>
-          <Link href="/funil-vendas">Funil</Link>
-          <Link href="/tecnicas-negociacao">Negociação</Link>
+          <Link href="/conceito">Conceito</Link>
+          <Link href="/canais">Canais</Link>
+          <Link href="/estrategias">Estratégias</Link>
+          <Link href="/posvenda">Pós-venda</Link>
+          <Link href="/funil">Funil</Link>
+          <Link href="/negociacao">Negociação</Link>
           <Link href="/contato">Contato</Link>
         </div>
 
@@ -42,12 +42,12 @@ export default function Navbar() {
       {menuOpen && (
         <div className="md:hidden bg-white dark:bg-zinc-900 px-6 py-4 space-y-3">
           <Link href="/">Home</Link>
-          <Link href="/conceito-atendimento">Conceito</Link>
-          <Link href="/canais-atendimento">Canais</Link>
-          <Link href="/estrategias-praticas">Estratégias</Link>
-          <Link href="/pos-venda">Pós-venda</Link>
-          <Link href="/funil-vendas">Funil</Link>
-          <Link href="/tecnicas-negociacao">Negociação</Link>
+          <Link href="/conceito">Conceito</Link>
+          <Link href="/canais">Canais</Link>
+          <Link href="/estrategias">Estratégias</Link>
+          <Link href="/posvenda">Pós-venda</Link>
+          <Link href="/funil">Funil</Link>
+          <Link href="/negociacao">Negociação</Link>
           <Link href="/contato">Contato</Link>
         </div>
       )}

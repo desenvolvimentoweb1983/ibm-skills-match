@@ -1,0 +1,62 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.description {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  color: #4b5563;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #e0f2fe; /* azul leve para etapas do funil */
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 280px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #0369a1;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #075985;
+}
+.logoCurso {
+  margin-top: 60px;
+  text-align: center;
+  width: 100%;
+}
+
+.logoCurso img {
+  margin: 0 auto;
+  display: block;
+}

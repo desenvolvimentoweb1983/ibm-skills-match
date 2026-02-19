@@ -111,3 +111,13 @@
     padding: 12px;
   }
 }
+.logoCurso {
+  margin-top: 60px;
+  text-align: center;
+  width: 100%;
+}
+
+.logoCurso img {
+  margin: 0 auto;
+  display: block;
+}

@@ -1,0 +1,91 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  color: whitesmoke;
+  line-height: 1.7;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.titulo {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.subtitulo {
+  color:whitesmoke;
+  font-size: 1.1rem;
+}
+
+/* SECTIONS */
+.section {
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.texto {
+  margin-bottom: 1rem;
+  color:whitesmoke;
+}
+
+/* LISTA */
+.lista {
+  padding-left: 1.2rem;
+}
+
+.lista li {
+  margin-bottom: 0.5rem;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 1.3rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: black
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: black
+}
+
+/* CONCLUSÃO */
+.conclusao {
+  text-align: center;
+  margin-top: 3rem;
+}
+.logoCurso {
+  margin-top: 60px;
+  text-align: center;
+  width: 100%;
+}
+
+.logoCurso img {
+  margin: 0 auto;
+  display: block;
+}
