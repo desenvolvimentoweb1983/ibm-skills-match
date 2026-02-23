@@ -19,12 +19,9 @@ export default function Navbar() {
 
   return (
     <nav className="bg-blue-600 shadow-md fixed w-full z-50">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link
-          href="/"
-          className="text-xl font-bold text-white dark:text-black"
-        >
+        <Link href="/" className="text-xl font-bold text-white">
           IBM SkillsBuild Match!
         </Link>
 
@@ -34,7 +31,7 @@ export default function Navbar() {
             <Link
               key={link.title}
               href={link.href}
-              className="text-white dark:text-black hover:text-gray-200 transition"
+              className="text-white hover:text-gray-200 transition"
             >
               {link.title}
             </Link>
@@ -44,31 +41,29 @@ export default function Navbar() {
         {/* Botão Mobile */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-white dark:text-black text-2xl"
+          className="md:hidden text-white text-2xl"
         >
           {menuOpen ? "✕" : "☰"}
         </button>
       </div>
 
-      {/* Menu Mobile */}
-      <div
-        className={`md:hidden bg-blue-600 dark:bg-zinc-900 px-6 py-4 transition-all duration-300 overflow-hidden ${
-          menuOpen ? "max-h-96" : "max-h-0"
-        }`}
-      >
-        <div className="flex flex-col gap-3">
-          {links.map((link) => (
-            <Link
-              key={link.title}
-              href={link.href}
-              className="text-white dark:text-black hover:text-gray-200 transition"
-              onClick={() => setMenuOpen(false)} // fecha menu ao clicar
-            >
-              {link.title}
-            </Link>
-          ))}
+      {/* Menu Mobile: renderiza somente quando aberto */}
+      {menuOpen && (
+        <div className="md:hidden bg-blue-600 px-4 sm:px-6 py-6 transition-all duration-300 overflow-hidden">
+          <div className="flex flex-col gap-3">
+            {links.map((link) => (
+              <Link
+                key={link.title}
+                href={link.href}
+                className="text-white hover:text-gray-200 transition"
+                onClick={() => setMenuOpen(false)}
+              >
+                {link.title}
+              </Link>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
     </nav>
   );
 }
