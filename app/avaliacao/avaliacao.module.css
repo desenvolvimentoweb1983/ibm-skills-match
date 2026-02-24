@@ -1,0 +1,107 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+/* ===== TÍTULOS ===== */
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.description {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  color: #4b5563;
+}
+
+/* ===== CARD DO QUIZ ===== */
+
+.quizCard {
+  background-color: #f9fafb;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+/* ===== PERGUNTA ===== */
+
+.question {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+
+/* ===== BOTÕES DE RESPOSTA ===== */
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.optionButton {
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.optionButton:hover {
+  background-color: #eff6ff;
+  border-color: #3b82f6;
+}
+
+/* ===== RESULTADO ===== */
+
+.result {
+  text-align: center;
+  padding: 1rem;
+}
+
+.score {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* ===== BOTÃO REINICIAR ===== */
+
+.restartButton {
+  margin-top: 1.5rem;
+  background-color: #2563eb;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  border-radius: 0.6rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.restartButton:hover {
+  background-color: #1d4ed8;
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .quizCard {
+    padding: 1.5rem;
+  }
+}

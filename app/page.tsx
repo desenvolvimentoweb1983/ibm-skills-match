@@ -9,7 +9,7 @@ export default function Home() {
             Desenvolvimento de Treinamento Interativo Sobre Atendimento ao Cliente
           </h1>
           <p className="text-lg text-zinc-700 dark:text-zinc-300 mb-6">
-            Desenvolvido pelo aluno <strong>Luís Oliveira</strong> do curso<strong> IBM SkillsBuild Match!</strong>, uma iniciativa educacional gratuita da IBM em parceria com a Mastertech.
+            Conteúdo acadêmico desenvolvido pelo aluno <strong>Luís Oliveira</strong> do curso<strong> IBM SkillsBuild Match!</strong>, uma iniciativa educacional gratuita da IBM em parceria com a Mastertech.
             <br />
             Curso 100% online, voltado para inclusão social e preparação para o mercado de trabalho, capacitando pessoas sem experiência prévia para o primeiro emprego na área tecnológica.
           </p>

@@ -14,6 +14,7 @@ export default function Navbar() {
     { title: "Pós-venda", href: "/posvenda" },
     { title: "Funil", href: "/funil" },
     { title: "Negociação", href: "/negociacao" },
+    { title: "Avaliação", href: "/avaliacao" },
     { title: "Contato", href: "/contato" },
   ];
 
